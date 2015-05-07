@@ -5,6 +5,7 @@ class GangstasController < ApplicationController
 
   def new
     #rtone
+    @gangstum = Gangstum.new
   end
 
   def show
