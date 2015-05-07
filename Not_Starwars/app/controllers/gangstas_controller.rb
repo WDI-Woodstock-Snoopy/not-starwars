@@ -8,7 +8,8 @@ class GangstasController < ApplicationController
     @gangstum = Gangstum.new
   end
   def create
-    #tg
+    gangstum = Gangsta.create( gangsta_params )
+    redirect_to "/gangstum/#{ gangsta.id  }"
   end
 
   def show
@@ -27,4 +28,8 @@ class GangstasController < ApplicationController
     #rtone
   end
 
+private
+  def gangsta_params
+    params.require(:gangsta).permit(:username, :password)
+  end
 end
