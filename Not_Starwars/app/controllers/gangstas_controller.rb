@@ -25,6 +25,7 @@ class GangstasController < ApplicationController
 
   def destroy
     #rtone
+    Gangstum.destroy(params[:id])
   end
 
 end

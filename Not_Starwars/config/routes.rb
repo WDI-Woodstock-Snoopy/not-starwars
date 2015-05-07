@@ -1,12 +1,6 @@
 Rails.application.routes.draw do
-  get 'gangstas/index'
 
-  get 'gangstas/new'
-
-  get 'gangstas/show'
-
-  get 'gangstas/edit'
-
+  resources :gangstas
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
