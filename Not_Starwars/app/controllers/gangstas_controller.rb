@@ -5,8 +5,10 @@ class GangstasController < ApplicationController
   end
 
   def new
-    #rtone
     @gangstum = Gangstum.new
+  end
+  def create
+    #tg
   end
 
   def show
@@ -17,5 +19,12 @@ class GangstasController < ApplicationController
     @gangstum = Gangstum.find(params[:id])
     @gangstum.update(params[:gangstum])
   end
-  
+  def update
+    #mightygaby
+  end
+
+  def destroy
+    #rtone
+  end
+
 end
