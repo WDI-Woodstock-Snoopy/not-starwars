@@ -18,10 +18,10 @@ class GangstasController < ApplicationController
 
   def edit
     @gangstum = Gangstum.find(params[:id])
-    @gangstum.update(params[:gangstum])
   end
   def update
-    #mightygaby
+    gangstum = Gangstum.find(params[:id])
+    # gangstum.update(params[])     <-- this needs params
   end
 
   def destroy
