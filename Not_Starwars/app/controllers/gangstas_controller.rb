@@ -21,7 +21,7 @@ class GangstasController < ApplicationController
   end
   def update
     gangstum = Gangstum.find(params[:id])
-    # gangstum.update(params[])     <-- this needs params
+    gangstum.update(gangsta_params)
   end
 
   def destroy
