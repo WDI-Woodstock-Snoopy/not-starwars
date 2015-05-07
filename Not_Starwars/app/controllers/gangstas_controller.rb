@@ -1,6 +1,7 @@
 class GangstasController < ApplicationController
+
   def index
-    #tg
+    @gangstas = Gangstum.all
   end
 
   def new
@@ -15,4 +16,5 @@ class GangstasController < ApplicationController
     @gangstum = Gangstum.find(params[:id])
     @gangstum.update(params[:gangstum])
   end
+  
 end
