@@ -1,6 +1,7 @@
 class GangstasController < ApplicationController
+
   def index
-    #tg
+    @gangstas = Gangstum.all
   end
 
   def new
@@ -9,10 +10,12 @@ class GangstasController < ApplicationController
   end
 
   def show
-    #mightygaby
+    @gangstum = Gangstum.find(params[:id])
   end
 
   def edit
-    #mightygaby
+    @gangstum = Gangstum.find(params[:id])
+    @gangstum.update(params[:gangstum])
   end
+  
 end
