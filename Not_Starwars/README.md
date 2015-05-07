@@ -1,14 +1,12 @@
 == README
 
-![alt tag](/nooo.gif)
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
 WHAT UP GANGSTA $$$$$$$$$$$$$
 
-
-
+![alt tag](/nooo.gif)
 
 Things you may want to cover:
 
