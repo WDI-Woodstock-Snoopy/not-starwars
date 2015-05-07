@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root '/' => 'gangstas#index' 
+  root 'gangstas#index'
 
   resources :gangstas
   # The priority is based upon order of creation: first created -> highest priority.
