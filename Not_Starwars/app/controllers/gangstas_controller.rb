@@ -8,7 +8,8 @@ class GangstasController < ApplicationController
     @gangstum = Gangstum.new
   end
   def create
-    #tg
+    gangstum = Gangsta.create( gangsta_params )
+    redirect_to "/gangstum/#{ gangsta.id  }"
   end
 
   def show
@@ -17,10 +18,10 @@ class GangstasController < ApplicationController
 
   def edit
     @gangstum = Gangstum.find(params[:id])
-    @gangstum.update(params[:gangstum])
   end
   def update
-    #mightygaby
+    gangstum = Gangstum.find(params[:id])
+    # gangstum.update(params[])     <-- this needs params
   end
 
   def destroy
@@ -28,4 +29,8 @@ class GangstasController < ApplicationController
     Gangstum.destroy(params[:id])
   end
 
+private
+  def gangsta_params
+    params.require(:gangsta).permit(:username, :password)
+  end
 end
