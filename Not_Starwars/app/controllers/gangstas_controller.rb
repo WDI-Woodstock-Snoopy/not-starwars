@@ -1,6 +1,7 @@
 class GangstasController < ApplicationController
+
   def index
-    #tg
+    @gangstas = Gangstum.all
   end
 
   def new
@@ -14,4 +15,5 @@ class GangstasController < ApplicationController
   def edit
     #mightygaby
   end
+  
 end
