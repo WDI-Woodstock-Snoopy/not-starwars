@@ -1,4 +1,4 @@
 # not-starwars
 Practicing Git
 
-![Screen Shot](/nooo.png)
+![alt tag](/nooo.gif)
