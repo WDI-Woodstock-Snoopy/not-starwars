@@ -1,6 +1,9 @@
-<h1>Gangstas#index</h1>
-<p>Find me in app/views/gangstas/index.html.erb</p>
 
-<div>
-  I'm in the <h2> HUMMERRRRRR </h2>
-</div>
+<h1>Gangstas</h1>
+<ul>
+  <% gangstum.each do |gangstum| %>
+  <li>
+  <%= gangstum.username %>
+  </li>
+    <% end %>
+</ul>
